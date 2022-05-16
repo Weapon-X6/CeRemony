@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   # API DEfinition
-  namespace :api, defaults { format: :json } do
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
     # Listing of resources
+    end
   end
 end
