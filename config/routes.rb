@@ -7,8 +7,7 @@ Rails.application.routes.draw do
   # API DEfinition
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-    # Listing of resources
-      resources :users, only: [:show]
+      resources :users, only: %i[show create]
     end
   end
 end
